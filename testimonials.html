@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonials — ketulcreation</title>
+<link rel="stylesheet" href="style.css">
+<meta name="description" content="Read testimonials from happy clients of ketulcreation — digital wedding invitations, logos, business cards and highlight reels crafted with care.">
+<style>
+.testi-hero{
+  background:linear-gradient(160deg,var(--maroon) 0%,#4d1c29 100%);
+  padding:72px 0 60px;text-align:center;position:relative;overflow:hidden;
+}
+.testi-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 40% 60%,rgba(201,169,97,.15) 0%,transparent 65%);} 
+.testi-hero h1{color:var(--ivory);font-size:clamp(2rem,4.5vw,3rem);position:relative;}
+.testi-hero .script{color:var(--gold-light);display:block;font-size:clamp(1.4rem,3.5vw,2.2rem);margin-top:4px;}
+.testi-hero p{color:rgba(251,246,238,.75);max-width:480px;margin:14px auto 0;position:relative;}
+
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:900px){.tgrid{grid-template-columns:1fr 1fr;}}
+@media(max-width:580px){.tgrid{grid-template-columns:1fr;}}
+
+.tcard{
+  background:var(--paper);
+  border:1px solid rgba(201,169,97,.25);
+  padding:32px 28px;
+  position:relative;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.tcard:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(31,42,36,.35);}
+.tcard .quote-mark{
+  font-family:'Cormorant SC',serif;font-size:4rem;line-height:.8;
+  color:var(--gold);opacity:.4;margin-bottom:8px;display:block;
+}
+.tcard p.review{
+  font-size:.95rem;color:var(--ink-soft);
+  font-style:italic;line-height:1.7;
+}
+.tcard .stars{color:var(--gold);font-size:.9rem;margin-top:16px;letter-spacing:2px;}
+.tcard .divider-line{width:32px;height:1px;background:var(--gold);margin:14px 0;}
+.tcard .client-name{font-family:'Cormorant SC',serif;font-size:1rem;font-weight:600;color:var(--ink);}
+.tcard .client-detail{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--maroon);margin-top:2px;}
+
+.featured{
+  background:var(--ink);border:none;grid-column:span 1;
+}
+.featured .quote-mark{color:var(--gold);opacity:.6;}
+.featured p.review{color:rgba(251,246,238,.8);}
+.featured .client-name{color:var(--ivory);}
+.featured .divider-line{background:var(--gold);} 
+
+.leave-review{
+  background:linear-gradient(135deg,var(--paper) 0%,var(--blush) 100%);
+  border:1px solid rgba(201,169,97,.3);
+  padding:48px 40px;text-align:center;margin-top:48px;
+}
+.leave-review h3{font-size:1.6rem;}
+.leave-review p{color:var(--ink-soft);margin:12px 0 24px;font-size:.95rem;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="seal">KC</span> ketulcreation</a>
+    <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="testimonials.html" class="active" aria-current="page">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="testi-hero">
+  <div class="wrap">
+    <h1>Words from our <span class="script">Happy Clients</span></h1>
+    <p>Every review is a story — of a beautiful occasion, a brand launched, or a reel that got shared thousands of times.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tgrid">
+
+      <div class="tcard featured reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">KetulCreation made our wedding invitation video so beautiful that our relatives from abroad kept replaying it. Ketul understood exactly what we wanted and delivered beyond our imagination.</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Riya &amp; Aarav Patel</div>
+        <div class="client-detail">Wedding Invitation Video</div>
+      </div>
+
+      <div class="tcard reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">I needed a logo for my new salon and Ketul gave me exactly what I pictured. Professional, quick, and very patient with my changes. Highly recommended!</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Neha Desai</div>
+        <div class="client-detail">Logo Design · Vadodara</div>
+      </div>
+
+      <div class="tcard reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">The mehndi invitation card was absolutely stunning. All my guests were asking who made it. Will definitely order again for the wedding!</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Priya Shah</div>
+        <div class="client-detail">Digital Invitation Card</div>
+      </div>
+
+      <div class="tcard reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">Got my business cards designed and they look so premium. My clients always compliment them. The turnaround was super fast too — within 2 days!</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Mihir Joshi</div>
+        <div class="client-detail">Business Cards · Surat</div>
+      </div>
+
+      <div class="tcard reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">KetulCreation edited our wedding highlight reel and it was cinematic! The music sync, the transitions — everything was perfect. Posted it on Instagram and got 10k views!</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Karan &amp; Diya Mehta</div>
+        <div class="client-detail">Wedding Highlight Reel</div>
+      </div>
+
+      <div class="tcard reveal">
+        <span class="quote-mark">"</span>
+        <p class="review">Very talented designer. Made our engagement invitation video and it was so elegant and emotional. Our whole family loved it. Thank you so much Ketul bhai!</p>
+        <div class="stars">★★★★★</div>
+        <div class="divider-line"></div>
+        <div class="client-name">Sneha &amp; Mehul Trivedi</div>
+        <div class="client-detail">Engagement Invitation Video</div>
+      </div>
+
+    </div>
+
+    <div class="leave-review reveal">
+      <h3>Worked with us? Share your experience 💛</h3>
+      <p>Your words help other families and businesses find us. We'd love to hear from you!</p>
+      <a href="https://wa.me/919023682094?text=Hi%20KetulCreation!%20I%20would%20like%20to%20share%20my%20review%20%F0%9F%8C%9F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Send Your Review on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="index.html" class="brand"><span class="seal">KC</span> ketulcreation</a>
+      <p style="margin-top:10px;color:rgba(251,246,238,.6);font-size:.88rem;max-width:280px;">Digital Wedding Invitations, Cards, Logos, Business Cards &amp; Reels.</p>
+    </div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="foot-bottom">&copy; 2026 ketulcreation. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
